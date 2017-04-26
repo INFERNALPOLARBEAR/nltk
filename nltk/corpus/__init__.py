@@ -244,6 +244,8 @@ universal_treebanks = LazyCorpusLoader(
                    'ignore', 'ignore', 'ignore', 'ignore', 'ignore'))
 verbnet = LazyCorpusLoader(
     'verbnet', VerbnetCorpusReader, r'(?!\.).*\.xml')
+vocabRU = LazyCorpusLoader(
+    'vocabRU', vocabRUCorpusReader, r'(?!\.).*\.txt')
 webtext = LazyCorpusLoader(
     'webtext', PlaintextCorpusReader, r'(?!README|\.).*\.txt', encoding='ISO-8859-2')
 wordnet = LazyCorpusLoader(
